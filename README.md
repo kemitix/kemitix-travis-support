@@ -8,6 +8,12 @@ Provides settings, deployment and coverage reporting for use within a Travis-CI 
 * sonatype deployment
 * coveralls reporting
 
+## Requirements
+
+* repo must contain the maven wrapper script: `mvnw`
+* travis defines the environment variables below
+* this project installed as a submodule as `.travis-support`
+
 ## Environment Variables
 
 * DEPLOY_USERNAME

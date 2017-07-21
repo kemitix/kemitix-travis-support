@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if test -z ${COVERAGE_PROJECTS]
+if test -z ${COVERAGE_PROJECTS}
 then
     PROJECTS=""
 else
