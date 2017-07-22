@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 echo "Decrypting signing key"
-eval KEY=\$encrypted_${SIGN_KEY}_key
+eval KEY=\$encrypted_${SIGN_ID}_key
 echo " Key: $KEY"
-eval IV=\$encrypted_${SIGN_KEY}_iv
+eval IV=\$encrypted_${SIGN_ID}_iv
 echo " IV: $IV"
 openssl aes-256-cbc -K ${KEY} -iv ${IV} -in codesigning.asc.enc -out codesigning.asc -d
 
