@@ -19,4 +19,4 @@ else
     echo "Deploying Projects: $DEPLOY_PROJECTS"
 fi
 
-./mvnw ${PROJECTS} --settings .travis-support/settings.xml -Dskip-Tests=true -P release -B deploy
+mvn ${PROJECTS} --settings .travis-support/settings.xml -Dskip-Tests=true -P release -B deploy
